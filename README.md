@@ -1,7 +1,3 @@
-Sure! Here's a more detailed and polished version of your README, expanding on the three parts and adding helpful sections like installation, usage, and contribution guidelines:
-
----
-
 # ViLM
 
 ViLM (Vietnamese Language Model) is an end-to-end pipeline for building and deploying a Transformer-based language model for Vietnamese. This repository includes all the necessary components to:
@@ -16,12 +12,39 @@ The project is split into three main parts:
 
 ## 🔤 1. [Build Tokenizer](https://github.com/vietnlp/vilm/tree/main/tokenizer)
 
-We use a subword tokenizer based on [SentencePiece](https://github.com/google/sentencepiece) to efficiently tokenize Vietnamese text.
+We use a subword tokenizer based on [SentencePiece](https://github.com/google/sentencepiece) to efficiently tokenize Vietnamese text and prepare it for language model training.
 
-### Features:
-- Preprocessing for Vietnamese-specific text normalization.
-- Train SentencePiece BPE or Unigram model.
-- Export tokenizer vocab and configurations for training and inference.
+### ✨ Features
+
+- **Collect & Analyze Vietnamese Corpora**
+  - Identify and process high-quality Vietnamese text datasets for training.
+  - Perform cleaning, deduplication, and filtering tailored for Vietnamese.
+
+- **Tokenizer Model Benchmarking**
+  - Evaluate the performance of popular tokenizer models on Vietnamese:
+    - GPT-4o, LLaMA 3, Gemma, Qwen 2.5
+    - Vietnamese-specific models like **PhoGPT**
+  - Compare tokenization quality, vocabulary coverage, and efficiency.
+
+- **Compare Tokenizer Algorithms**
+  - Study and benchmark different subword tokenization methods:
+    - BPE (Byte-Pair Encoding)
+    - Unigram Language Model
+    - WordPiece
+    - Others (character-level, hybrid approaches)
+
+- **Train Your Own Tokenizer**
+  - Use SentencePiece to train a Vietnamese tokenizer from scratch.
+  - Choose models.
+  - Analyze performance: vocabulary size, token efficiency, and training speed.
+
+- **Vietnamese-specific Preprocessing**
+  - Apply rule-based normalization and text cleaning tailored for Vietnamese language characteristics (accents, compound words, etc.).
+
+- **Export Tokenizer Artifacts**
+  - Export trained tokenizer vocabulary and model configs for model training and downstream inference.
+
+---
 
 ### How to use:
 ```bash
