@@ -1,6 +1,6 @@
 # 🇻🇳 ViLM: Vietnamese Language Model
 
-**ViLM (Vietnamese Language Model)** is an end-to-end pipeline for building, training, and deploying Transformer-based language models specifically tailored for the Vietnamese language.
+**ViLM (Vietnamese Language Model)** is building a Vietnamese language model from scratch.
 
 This repository provides the components to:
 
